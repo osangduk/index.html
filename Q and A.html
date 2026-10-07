@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project Q and A</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>       
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1><a href="index.html"><img src="image/logo.jpg" alt="빙그레 로고"></a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="sub1.html">제품 소개</a></li>
+                    <li><a href="#">my page</a></li>
+                </ul>
+            </nav>
+            <div>
+                <a href="#" class="btn">회원가입</a>
+                <a href="#" class="btn">로그인</a>
+            </div>
+        </header>
+
+        <section>
+            <div id="QandA_box">
+                <h2>고객센터 Q&A 게시판</h2>
+                <div id="QandA">
+                    <ul>
+                        <li>
+                            <h3>Q. 질문 1 : 아이스크림에는 왜 소비기한이 없나요?</h3>
+                            <ul>
+                                <li>A. 답변 1 : 아이스크림 제품은 영하 18도 이하에서 유통되고 있어 냉동 보관해 주시면 부패나 변질이 일어나지 않아 소비기한이 따로 없이 제조일만 표기되고 있습니다.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>Q. 질문 2 : 우유의 경우 유통기한 지나 며칠까지 먹어도 되나요?</h3>
+                            <ul>
+                                <li>A. 답변 2 : 유통기한은 보통 안전성을 감안하여 선정되어 냉장유통 제품의 경우는 저장온도와 조건이 매우 큰 영향을 미치기 때문에 유통기한 내에 드시는 걸 권장해드립니다. 특히, 개봉된 상태라면 냉장보관 상태에서 가급적 빨리 드시기를 권장드립니다.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>Q. 질문 3 : 떠먹는 요거트를 금속 스푼으로 떠 먹으면 유산균이 사멸되나요?</h3>
+                            <ul>
+                                <li>A. 답변 3 : 아무래도 유산균이 금속에 접촉하였을 때 유산균이 사멸되어 그 효과가 떨어지지 않을지 염려하셔서 문의를 주신 것으로 예상됩니다. 우선 유산균이 금속과 접촉하면 사멸한다는 내용의 근거는 금속 성분 중 이온화 경향이 큰 원소들(철, 망간, 납 등)이 수소 이온과 만나 금속 반응을 일으키는 과정에서 발생되는 열 때문에 열에 약한 유산균이 사멸하는 것에 따른 것으로 추정하고 있습니다. 하지만 이는 유산균이 2~3일 이상 장시간 금속에 노출되었을 때의 가능성이며, 제품을 드시는 짧은 시간 동안 금속 재질의 스푼을 사용하더라도 유산균 사멸이나 영양적 손실 등의 영향은 없사오니 전혀 걱정하지 않으셔도 괜찮습니다.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script>
+    $(function(){
+        $("#QandA_box ul ul").hide();
+        $("#QandA_box ul > li").click(function(e){
+            e.stopPropagation(); 
+            $("ul", this).slideToggle("fast");
+        });
+    });
+</script>
+</script>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원 가입</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="wrap">
+        <h2>회원 가입</h2>
+        <form action="#" method="post">
+            <table>
+                <tr>
+                    <td><label for="user_id">아 이 디</label></td>
+                    <td>
+                        <input type="text" id="user_id" name="user_id" required>
+                        <input type="button" value="중복확인">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="user_pw">비 밀 번 호 </label></td>
+                    <td><input type="password" id="user_pw" name="user_pw" required></td>
+                </tr>
+                <tr>
+                    <td><label for="user_pw2">비 밀 번 호 확인 </label></td>
+                    <td><input type="password" id="user_pw2" name="user_pw2" required></td>
+                </tr>
+                <tr>
+                    <td><label for="u_name">이 름 </label></td>
+                    <td><input type="text" id="u_name" name="u_name" required></td>
+                </tr>
+                <tr>
+                    <td>성 별 </td>
+                    <td>
+                        <label><input type="radio" name="gender" value="man">남자</label>
+                        <label><input type="radio" name="gender" value="women">여자</label>
+                        <label><input type="radio" name="gender" value="none">표시 안 함</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="u_birth">생 년 월 일 </label></td>
+                    <td><input type="date" id="u_birth" name="u_birth"></td>
+                </tr>
+                <tr>
+                    <td><label for="u_phone">휴 대 폰 번호 </label></td>
+                    <td><input type="tel" id="u_phone" name="u_phone" placeholder="010-0000-0000"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center; padding-top: 15px;">
+                        <input type="submit" value="회원가입">
+                        <a href="index.html">홈 으 로</a>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

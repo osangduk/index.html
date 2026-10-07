@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원정보 수정 - 마이페이지</title>
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        #wrap2 {
+            width: 50%;
+            min-width: 480px;
+            border: 1px solid #ddd;
+            margin: 50px auto;
+            padding: 30px;
+            box-sizing: border-box;
+            border-radius: 8px;
+        }
+
+        #wrap2 h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        #wrap2 table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        #wrap2 td {
+            padding: 10px 8px;
+            vertical-align: middle;
+        }
+
+        #wrap2 td:first-child {
+            width: 25%;
+            font-weight: bold;
+            color: #333;
+        }
+
+        #wrap2 input[type="text"],
+        #wrap2 input[type="password"],
+        #wrap2 select {
+            height: 32px;
+            padding: 0 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .addr-group input[type="text"] {
+            margin-bottom: 6px;
+        }
+
+        .btn-group {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .btn-group button {
+            padding: 8px 20px;
+            margin: 0 4px;
+            cursor: pointer;
+        }
+    </style> 
+</head>
+<body>
+    <div id="container">
+        <header>
+            <a href="index.html"><img src="image/logo.jpg" alt="로고이미지"></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">my page</a></li>
+                </ul>
+            </nav>
+            <div>
+                <a href="member.html" class="btn">회원가입</a>
+                <a href="login.html" class="btn">로그인</a>
+            </div>
+        </header>
+
+        <main id="wrap2">
+            <h2>회원정보 수정</h2>
+            <form action="#" method="post">
+                <table>
+                    <tr>
+                        <td>아이디</td>
+                        <td><strong>Carpe_Dium</strong></td>
+                    </tr>
+                    <tr>
+                        <td><label for="u_nic">닉네임</label></td>
+                        <td><input type="text" name="u_nic" id="u_nic" value="Carpe_Dium"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="u_pw1">새 비밀번호</label></td>
+                        <td><input type="password" name="u_pw1" id="u_pw1" placeholder="영문, 숫자 포함 8자리 이상"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="u_pw2">비밀번호 확인</label></td>
+                        <td><input type="password" name="u_pw2" id="u_pw2"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="u_mail">이메일</label></td>
+                        <td>
+                            <input type="text" name="u_mail" id="u_mail"> @
+                            <select name="u_mail2" id="u_mail2" aria-label="이메일 도메인 선택">
+                                <option value="naver.com">naver.com</option>
+                                <option value="daum.net">daum.net</option>
+                                <option value="google.com">gmail.com</option>
+                                <option value="direct">직접입력</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>전화번호</td>
+                        <td>
+                            <select name="u_tel1" id="u_tel1" aria-label="전화번호 앞자리">
+                                <option value="010">010</option>
+                                <option value="02">02</option>
+                                <option value="031">031</option>
+                                <option value="032">032</option>
+                            </select> - 
+                            <input type="text" name="u_tel2" id="u_tel2" size="4" maxlength="4" aria-label="전화번호 중간자리"> - 
+                            <input type="text" name="u_tel3" id="u_tel3" size="4" maxlength="4" aria-label="전화번호 끝자리">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>주소</td>
+                        <td class="addr-group">
+                            <input type="text" name="u_post" id="u_post" placeholder="우편번호" size="6" readonly>
+                            <button type="button">우편번호 검색</button><br>
+                            <input type="text" name="u_addr1" id="u_addr1" placeholder="기본주소" style="width: 85%;" readonly><br>
+                            <input type="text" name="u_addr2" id="u_addr2" placeholder="상세주소 입력" style="width: 85%;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="btn-group">
+                            <button type="submit">수정완료</button>
+                            <button type="reset">취소</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </main>
+
+        <footer>
+            <p>
+                고객상담센터: 080-022-0056 (운영시간 09:00 ~ 18:00, 주말/공휴일 휴무)<br>
+                경기도 남양주시 다산동 4344-3 / 경기도 남양주시 다산순환로 45<br> 
+                Copyright &copy; Binggrae Co., Ltd. All rights reserved.
+            </p>
+        </footer>
+
+        <a href="#container" class="top-btn" title="상단으로 이동">TOP</a>
+    </div>
+</body>
+</html>

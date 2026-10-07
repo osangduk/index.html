@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제품 상세 - 바나나맛 우유</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"></script>
+
+    <script>
+      $(function() {
+        $("#accordion").accordion({
+          collapsible: true, 
+          heightStyle: "content" 
+        });
+      });
+    </script>
+
+    <style>
+      /* 상세 페이지 레이아웃 보완 */
+      #detail-m1 {
+        width: 80%;
+        margin: 40px auto 20px;
+        text-align: center;
+      }
+
+      #detail-m2 {
+        width: 80%;
+        margin: 30px auto 50px;
+      }
+
+      .detail-fl1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+      }
+
+      .detail-fl1 .product-thumb {
+        width: 40%;
+        text-align: center;
+      }
+
+      .detail-fl1 .product-thumb img {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+
+      .detail-fl1 .product-info {
+        width: 55%;
+      }
+
+      .detail-fl1 .product-info table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+      }
+
+      .detail-fl1 .product-info th,
+      .detail-fl1 .product-info td {
+        padding: 10px;
+        border-bottom: 1px solid #e0e0e0;
+        text-align: left;
+      }
+
+      /* 아코디언 영역 중앙 정렬 */
+      .accordion-wrap {
+        width: 80%;
+        margin: 40px auto 60px;
+      }
+
+      #accordion h3 {
+        font-size: 16px;
+        font-weight: 600;
+        padding: 12px 15px;
+      }
+
+      #accordion div {
+        line-height: 1.6;
+        font-size: 14px;
+        color: #444;
+      }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <!-- 헤더 -->
+        <header>
+            <h1 class="logo">
+                <a href="#"><img src="image/logo.jpg" alt="빙그레 로고"></a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#brand">빙그레 이야기</a></li>
+                    <li><a href="#premium">프리미엄 클래스</a></li>
+                    <li><a href="#location">찾아오시는 길</a></li>
+                    <li><a href="sub1.html">제품 소개</a></li>
+                    <li><a href="qna.html">고객 센터</a></li>
+                </ul>
+            </nav>
+            <div class="header-auth">
+                <a href="member.html" class="btn">회원가입</a>
+                <a href="login.html" class="btn">로그인</a>
+            </div>
+        </header>
+
+        <!-- 타이틀 섹션 -->
+        <div id="detail-m1">
+            <h1>제품소개</h1>
+            <hr>
+            <h2>바나나맛 우유</h2>
+            <p>대한민국을 대표하는 No.1 우유</p>
+            <hr>
+        </div>
+
+        <!-- 본문 상세 (이미지 + 요약 스펙) -->
+        <section id="detail-m2">
+            <div class="detail-fl1">
+                <div class="product-thumb">
+                    <img src="image/dangi 1-1.png" alt="바나나맛우유">
+                </div>
+                <div class="product-info">
+                    <h3>바나나맛우유 240ml</h3>
+                    <p>1974년 출시 이후 꾸준히 사랑받고 있는 빙그레의 대표 항아리 단지 우유</p>
+                    <table>
+                        <tr>
+                            <th>용량</th>
+                            <td>240ml</td>
+                        </tr>
+                        <tr>
+                            <th>열량</th>
+                            <td>208 kcal</td>
+                        </tr>
+                        <tr>
+                            <th>보관방법</th>
+                            <td>0~10℃ 냉장보관</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 상세 아코디언 메뉴 -->
+        <div class="accordion-wrap">
+            <div id="accordion">
+                <h3>영양정보</h3>
+                <div>
+                    <p>나트륨 110mg(6%), 탄수화물 27g(8%), 당류 27g(27%), 지방 8g(15%), 트랜스지방 0g, 포화지방 5g(33%), 콜레스테롤 30mg(10%), 단백질 7g(13%)</p>
+                </div>
+
+                <h3>원재료명 및 함량</h3>
+                <div>
+                    <p>원유(국산) 85.715%, 정제수, 설탕, 탈지분유(국산), 유청분말, 바나나농축과즙(고형분 68%, 이스라엘산) 0.315%, 합성향료, 카로틴, 바닐라추출물</p>
+                </div>
+
+                <h3>보관방법 및 주의사항</h3>
+                <div>
+                    <ul>
+                        <li>0~10℃ 냉장보관하십시오.</li>
+                        <li>개봉 후에는 반드시 냉장보관하거나 즉시 드십시오.</li>
+                        <li>전자레인지 이용 시 별도 전용 용기를 사용하십시오.</li>
+                    </ul>
+                </div>
+
+                <h3>제품 문의 및 교환 안내</h3>
+                <div>
+                    <p>본 제품은 공정거래위원회 고시 소비자분쟁해결기준에 의거 교환 또는 보상받을 수 있습니다.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 푸터 -->
+        <footer>
+            <p>
+                고객상담센터: 080-022-0056 (운영시간 09:00 ~ 18:00, 주말/공휴일 휴무)<br>
+                경기도 남양주시 다산동 4344-3 / 경기도 남양주시 다산순환로 45<br> 
+                Copyright &copy; Binggrae Co., Ltd. All rights reserved.
+            </p>
+        </footer>
+
+        <a href="#container" class="top-btn" title="상단으로 이동">TOP</a>
+    </div>  
+</body>
+</html>

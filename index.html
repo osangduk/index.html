@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>빙그레 프로젝트</title>
+    <script src="https://code.jquery.com/jquery-4.0.0.js"></script>>
+   <link href="css/style.css" rel="stylesheet">
+   <link href="css/login.css" rel="stylesheet">
+   <script scr="js/form.js"></script>
+</head>
+<body>
+    <div id="container">
+        <!-- 헤더 영역 -->
+        <header>
+            <h1 class="logo">
+                <a href="#"><img src="image/logo.jpg" alt="빙그레 로고"></a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#brand">빙그레 이야기</a></li>
+                    <li><a href="#premium">프리미엄 클래스</a></li>
+                    <li><a href="#location">찾아오시는 길</a></li>
+                    <li><a href="sub1.html">제품 소개</a></li>
+                    <li><a href="Q and A.html">고객 센터</a></li>
+                </ul>
+            </nav>
+            <div class="header-auth">
+                <a href="member.html" class="btn">회원가입</a>
+                <a href="login.html" class="btn">로그인</a>
+            </div>
+        </header>
+
+        <!-- 메인 슬라이드 -->
+        <section id="slide">
+            <div class="slide-container">
+                <div class="slide-item"><img src="image/1.jpg" alt="메인 비주얼 1"></div>
+                <div class="slide-item"><img src="image/2.jpg" alt="메인 비주얼 2"></div>
+                <div class="slide-item"><img src="image/3.jpg" alt="메인 비주얼 3"></div>
+            </div>
+            <!-- 컨트롤 버튼 -->
+            <button class="slide-btn slide-prev" aria-label="이전 슬라이드">&#10094;</button>
+            <button class="slide-btn slide-next" aria-label="다음 슬라이드">&#10095;</button>
+            <!-- 도트 네비게이션 -->
+            <div class="slide-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+        </section>
+
+        <!-- 브랜드 소개 -->
+        <section id="brand">
+            <h2>빙그레 이야기</h2>
+            <p>
+                행복한 순간, 달콤한 추억 빙그레<br>
+                어린시절의 달콤하고 행복한 기억처럼 고소한 우유의 달콤한 아이스크림,<br>
+                그 행복의 순간은 바로 곁에 있습니다.
+            </p>
+            <div class="card-grid">
+                <div class="card">
+                    <img src="image/icon1.png" alt="신뢰 가치 아이콘">
+                    <h3>Trust Value</h3>
+                    <p>우유함량 100%</p>
+                </div>
+                <div class="card">
+                    <img src="image/icon2.png" alt="품질 아이콘">
+                    <h3>Quality</h3>
+                    <p>국내최대 유지방 함유</p>
+                </div>
+                <div class="card">
+                    <img src="image/icon3.png" alt="신선함 아이콘">
+                    <h3>Fresh Value</h3>
+                    <p>신선한 냉장유통</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 프리미엄 클래스 -->
+        <section id="premium">
+            <h2>프리미엄 클래스</h2>
+            <p>소프트 아이스크림 기본에 충실한 깊은 풍미는 다양한 방법으로 당신을 찾아갑니다.</p>
+            <div class="card-grid">
+                <div class="card">
+                    <img src="image/4.jpg" alt="베이커리와 결합된 소프트 아이스크림">
+                    <h3>베이커리와의 조화</h3>
+                    <p>베이커리 고유의 풍미를 살리고 본연의 맛을 느낄 수 있는 프리미엄 소프트 아이스크림</p>
+                </div>
+                <div class="card">
+                    <img src="image/5.jpg" alt="아이스 음료 및 토핑용 믹스">
+                    <h3>시원한 아이스 믹스</h3>
+                    <p>음료 믹스 및 다채로운 디저트 토핑용으로 어울리는 진한 풍미의 아이스믹스</p>
+                </div>
+                <div class="card">
+                    <img src="image/6.jpg" alt="에스프레소와 어우러진 아이스크림">
+                    <h3>에스프레소 & 12.1% 유지방</h3>
+                    <p>상상만으로도 즐거워지는 진한 맛과 부드러운 텍스처를 선사합니다</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 찾아오시는 길 -->
+        <section id="location">
+            <h2>찾아오시는 길</h2>
+            <p>언제나 열려있는 빙그레의 위치를 안내해 드립니다.</p>
+            <div class="location-container">
+                <div class="map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x357cb73831b1a957%3A0x48152006ee866da8!2z67mZ6re466CIIOuCqOyWkeyjvDHqs7XsnqU!5e0!3m2!1sko!2skr!4v1790567017844!5m2!1sko!2skr" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+                <div class="location-details">
+                    <h3>주식회사 빙그레</h3>
+                    <ul class="contact-details">
+                        <li>
+                            <h4>회사 위치</h4>
+                            <p>경기도 남양주시 다산동 4344-3</p>
+                        </li>
+                        <li>
+                            <h4>영업 시간</h4>
+                            <p>평일 09:00 ~ 18:00</p>
+                        </li>
+                        <li>
+                            <h4>고객 센터</h4>
+                            <p>080-022-0056</p>
+                        </li>
+                        <li>
+                            <h4>온라인 채널</h4>
+                            <p>홈페이지: <a href="http://www.bing.co.kr" target="_blank" style="color: #e52528; text-decoration: underline;">www.bing.co.kr</a></p>
+                            <p>이메일: cs@bing.co.kr</p>
+                        </li>
+                    </ul>
+                    <div style="margin-top: 20px;">
+                        <a href="https://maps.app.goo.gl/JARU7XEFroUgJgWS7" target="_blank" rel="noopener noreferrer" class="btn">구글 지도에서 보기</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 푸터 영역 -->
+        <footer>
+            <p>
+                고객상담센터: 080-022-0056 (운영시간 09:00 ~ 18:00, 주말/공휴일 휴무)<br>
+                경기도 남양주시 다산동 4344-3 / 경기도 남양주시 다산순환로 45<br> 
+                Copyright &copy; Binggrae Co., Ltd. All rights reserved.
+            </p>
+        </footer>
+
+        <!-- 상단 이동 버튼 -->
+        <a href="#container" class="top-btn" title="상단으로 이동">TOP</a>
+    </div>  
+</body>
+</html>
